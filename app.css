@@ -1,0 +1,454 @@
+/*-----------Styles for desktops 768px and up-----------*/
+
+/*Fonts*/
+@font-face{
+font-family:"Avenir LT W01 95 Black";
+src:url("https://fonts.uwgt.org/Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot");
+src:url("https://fonts.uwgt.org/Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("embedded-opentype"),url("https://fonts.uwgt.org/Fonts/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),url("https://fonts.uwgt.org/Fonts/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),url("https://fonts.uwgt.org/Fonts/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01 55 Roman";
+src:url("https://fonts.uwgt.org/Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot");
+src:url("https://fonts.uwgt.org/Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("embedded-opentype"),url("https://fonts.uwgt.org/Fonts/b9ebb19d-88c1-4cbd-9baf-cf51972422ec.woff") format("woff"),url("https://fonts.uwgt.org/Fonts/5ed4f98e-9044-4810-88ff-74d412c1351f.ttf") format("truetype"),url("https://fonts.uwgt.org/Fonts/4cb16859-16ca-4342-b89c-292dc83266af.svg#4cb16859-16ca-4342-b89c-292dc83266af") format("svg");
+}
+body { 
+  background: url(../img/ww-background.jpg) no-repeat center center fixed;
+  background-size:3400px 2000px;  
+}
+.container {
+  background-color:#fff;
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.container p, .container ul li  {
+	font-family:"Avenir LT W01 55 Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:1.1rem;
+  line-height:1.7rem;
+}
+h1 {
+  font-size:2.5rem;
+  color:#da291c;
+  font-family:"Avenir LT W01 55 Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-left:1rem; 
+}
+h1.home {  
+  padding-left:0;
+  padding-bottom:0.5rem;
+  font-family:"Avenir LT W01 55 Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;
+} 
+h2 {
+  font-size:1.9rem;
+  font-family:"Avenir LT W01 55 Roman", Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+.container a, .container a:visited {
+  border-bottom: dotted 1px #2ba6cb;
+}
+.container a:hover, .container a:visited:hover, .container a:focus {
+  color:#da291c;
+  border-bottom: dotted 1px #da291c;
+}
+/*Menu links and icons*/
+.menu-link img {
+  float:left;
+  margin-right:0.5rem;
+}
+p.menu-link {
+  margin-bottom:0;
+  padding:0.5rem 0;
+  float:right;
+  width:9rem;
+}
+.menu-home p {
+  float:left;
+}
+.menu-link a, .menu-link a:visited {
+  border-bottom:0;
+  font-family:"Avenir LT W01 95 Black", Arial, "Helvetica Neue", Helvetica, sans-serif; 
+  color:#515353; 
+  text-transform: uppercase;
+  font-size:0.9rem;
+  padding:0;
+}
+.menu-link a:hover, .menu-link a:visited:hover, .menu-link a:focus {
+  border-bottom:1px dotted #da291c;
+  color:#da291c; 
+}
+/*Inline lists - Foundation class isn't working*/
+.inline-list {
+  margin: 0px 0px 0.94444rem -1.22222rem;
+  padding: 0px;
+  list-style: none outside none;
+  overflow: hidden;
+}
+.inline-list > li > * {
+  display: block;
+}
+.inline-list > li {
+  list-style: none outside none;
+  float: left;
+  margin-left: 1.22222rem;
+  display: block;
+}
+/*Add space under the menu row, before the content area*/
+.top-menu {
+	padding-bottom:1.5rem;
+}
+/*Reduce width of Quantity field input*/
+form input[name="order_quantity"]  {
+  width:6rem;
+}
+a.buy, a.buy:visited {
+  text-transform: uppercase;
+  color:#da291c;
+  font-weight:bold;
+  border-bottom:0;
+}
+
+a.download, a.download:visited {
+  text-transform: uppercase;
+  color:#da291c;
+  font-weight:bold;
+  border-bottom:0;
+  text-align:center;
+}
+
+.gift {
+  font-size:1.12rem;
+}
+.socmed {  
+  min-width:210px;
+  /*text-align:right;*/
+}
+.sharethis {
+  /*text-align:right;*/
+}
+div.disclaimer {
+  margin-top:2rem;
+}
+p.disclaimer {
+  font-size:0.9rem;
+  line-height:1.1rem;
+}
+hr {
+  border-color:#919191;
+  border-width: 2px 0px 0px;
+}
+.footer {
+  border-top:#919191 2px solid;
+  padding-top:1.5rem;
+  margin-top:1rem;
+}
+.footer2 {
+  border-top:#919191 1px solid;  
+  margin-top:1rem;
+  padding-top:1rem;
+}
+input[type="submit"] {
+  background-color:#da291c;
+  color:#fff;
+  padding:0.5rem;
+  border-radius:0.5rem;
+  width:7rem;
+  font-size:1.2rem;
+  border:0;
+  cursor:pointer;
+  margin-top:1rem;
+}
+input[name="continue"] {
+  width:13rem;
+}
+.thumbnail {
+  width:100%;
+}
+/*Reduce font size for CRA text on Payment Form page*/
+.cra p {
+  font-size:0.9rem;
+  line-height:1.1rem;
+}
+/*Increase padding above product description*/
+.product-desc {
+  padding-top:1rem;
+}
+/*Remove space between "steps" images on home page and center-align steps on mobile*/
+ul.imagelist {
+ padding:0;
+ margin:0;
+}
+.imagelist li {
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+.menu {
+  border-bottom:2px solid #919191;
+  margin-bottom:1rem;
+}
+.home {
+  border-bottom:0;
+  margin-bottom:0;  
+}
+.personal-msg p {
+  font-size:1.6rem;
+  line-height:1.9rem;
+  padding-top:2rem;
+}
+.edit-msg {
+  text-align:right;
+}
+.edit-msg a {
+	font-size:1.0rem;
+	font-size: 1.0rem;
+	background-color: red;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+}
+.footer-logo {
+  text-align:right;
+  padding-top:1rem;
+}
+/*-----------END Styles for desktops 768px and up-----------*/
+
+
+/*-----------Styles for most tablets-----------*/
+@media (min-width: 450px) and (max-width: 768px) {
+
+  .gift {
+    font-size:1.1rem;
+  }
+  /*Increase width of M/D/Y dropdowns*/
+  select[name="sendday"] {
+    width:5rem;
+  }
+  select[name="sendmonth"] {
+    width:5rem;
+  }
+  select[name="sendyear"] {
+    width:4.5rem;
+  }
+  .socmed-row {
+    text-align:center;
+  }
+  .sharethis {
+    margin-left: auto;
+    margin-right:auto;
+    width:8rem; 
+  }  
+
+}
+/*-----------END Styles for most tablets-----------*/
+
+
+/*-----------Adjustments to styles for smaller tablets-----------*/
+@media screen and  (max-width: 650px) {
+
+  h1 {  
+      font-size:1.8rem;
+  } 
+  h2 {
+    font-size:1.4rem;
+  }
+  /*Changes to banner layout*/  
+  .banner {
+    background-image: none;
+    background-color:#da291c;
+  }
+  .bannerinner {
+    text-align:center;
+  }
+  .bannerinner p {
+    color:#fff;
+    font-size:1.1rem;
+    padding:0;
+  }
+  .bannerinner a {
+    border-bottom:0;
+  }
+  /*Make the shopping cart table work on small screens. See: http://css-tricks.com/responsive-data-tables/*/  
+  table {
+    padding:0.5rem;
+    width:100%;
+  }
+  table thead tr td, table tbody tr td {
+    display:block;
+  }
+  /* Hide table headers (but not display: none; for accessibility) */
+  table thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  div.back-link {
+    text-align:left;
+  }
+	/*Reduce line height of radio button labels*/
+	input[type="radio"] {
+    	margin: 0px 0px 0.4rem;    
+	}  
+	/*Remove left padding on card options on Shopping Cart page*/
+	.nopad {
+		padding-left: 0;
+	}
+  /*Increase space between gift description and Buy Now link*/
+  a.buy, a.buy:visited {
+    display:block;
+    background-color:#da291c;
+    color:#fff;
+    border-radius:0.3rem;
+    padding:0.5rem;
+    text-align:center;
+    margin-top:-1.1rem;
+    margin-bottom:1.5rem;
+  }
+  a.buy:hover, a.buy:visited:hover {
+    color:#fff;
+    border-bottom:0;
+  }
+  /*Decrease size of gift description*/
+  .gift {
+    display:block;
+    font-size: 1.0rem;
+    line-height:1.1rem;
+    margin-top:0.5rem;
+  }
+  /*Increase vertical space between top menu items*/
+  .menucolumn {
+    padding:0.5rem 0 0.4rem 0;
+  }
+  /*Center the menu items*/
+  .menu-home, .menu-viewcart, .menu-emptycart  {
+    max-width:7rem;    
+  }
+  .menu-home, .menu-viewcart  {
+    border-bottom:1px dotted #54585a;   
+  } 
+  /*Reposition ShareThis widget*/
+  .socmed {
+    /*float:left;*/
+    margin-top:2rem;
+  }
+  .sharethis {
+    text-align:center;
+  }
+  /*Reduce size of card image in Shopping Cart*/
+  table tbody tr td img {
+    max-width:50%;
+  }
+  table tbody tr td strong {
+    font-size:1.2rem;
+  }
+  input[name="update"] {
+    width:13rem;
+  }
+  input[name="checkout"] {
+    width:13rem;
+  }
+  .edit {
+    margin-top:1rem;
+  }
+  .edit a, .preview a, .addremove a {
+    font-size:1.4rem;
+    line-height:2rem;
+  }
+  p.menu-link {
+    float:none;
+  } 
+  .checkout-buttons {
+    display:block;
+    width:100%;
+  }
+  input[name="continue"] {
+    width:12rem;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  input[name="update"] {
+    width:7rem;
+    display:block;  
+    margin-left:auto;
+    margin-right:auto;  
+  }
+  input[name="checkout"] {
+    width:7rem;
+    display:block; 
+    margin-left:auto;
+    margin-right:auto; 
+  }
+  input[type="checkbox"] {
+    margin: 0px;
+  }
+  .twl-logo {
+    text-align:center;
+    border-top:#919191 1px solid;
+    padding-top:1rem;
+  }
+  .footer {
+    padding-bottom:1rem;  
+  }
+}
+/*-----------END adjustments to styles for small tablets---------*/
+
+
+/*-----------Styles for phones-----------*/
+@media screen and  (max-width: 480px) {
+
+
+/*Stack ther M/D/Y dropdowns*/
+   select[name="sendday"] {
+    width:5rem;
+  }
+  select[name="sendmonth"] {
+    width:5rem;
+  }
+  select[name="sendyear"] {
+    width:5rem;
+  }
+  .smallcol {
+    display:block;
+    width:100%;
+  }
+  /*Increase width of Expiry dropdowns on Payment Form page*/
+  select[name="expirymonth"], select[name="expiryyear"] {
+    width:5rem;
+  }
+  /*Reduce font size of H1 and H2*/
+  h1 {  
+      font-size:1.8rem;
+  } 
+  h2 {
+    font-size:1.4rem;
+  }
+  .smallradio {
+    padding-bottom:1rem;
+  }
+  input[type="checkbox"] {
+    margin: 0px;
+  }
+  /*Reposition ShareThis widget*/
+  .socmed {    
+  /*margin-top:2rem;
+  margin-left:-2rem;*/
+  }
+  .sharethis {
+    /*text-align:center;*/
+  }
+  .twl-logo {
+    text-align:center;
+    border-top:#919191 1px solid;
+    padding-top:1rem;
+  }
+  .uwt-logo {
+    padding-bottom:1rem;  
+  }
+  .footer {
+    padding-bottom:1rem;
+  }
+  .footer2 {
+    padding-top:0rem;
+  }  
+
+
+}
+/*-----------END Styles for phones-----------*/
