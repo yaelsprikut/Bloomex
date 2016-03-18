@@ -12,8 +12,9 @@ src:url("https://fonts.uwgt.org/Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot")
 src:url("https://fonts.uwgt.org/Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("embedded-opentype"),url("https://fonts.uwgt.org/Fonts/b9ebb19d-88c1-4cbd-9baf-cf51972422ec.woff") format("woff"),url("https://fonts.uwgt.org/Fonts/5ed4f98e-9044-4810-88ff-74d412c1351f.ttf") format("truetype"),url("https://fonts.uwgt.org/Fonts/4cb16859-16ca-4342-b89c-292dc83266af.svg#4cb16859-16ca-4342-b89c-292dc83266af") format("svg");
 }
 body { 
-  background: url(../img/ww-background.jpg) no-repeat center center fixed;
-  background-size:3400px 2000px;  
+  background: url(../img/Background.jpg) no-repeat center center fixed;
+  /* background-size:3400px 2000px;  */ 
+  background-repeat: repeat;
 }
 .container {
   background-color:#fff;
@@ -24,7 +25,7 @@ body {
 .container p, .container ul li  {
 	font-family:"Avenir LT W01 55 Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size:1.1rem;
-  line-height:1.7rem;
+  line-height:1.5rem;
 }
 h1 {
   font-size:2.5rem;
@@ -45,8 +46,7 @@ h2 {
   border-bottom: dotted 1px #2ba6cb;
 }
 .container a:hover, .container a:visited:hover, .container a:focus {
-  color:#da291c;
-  border-bottom: dotted 1px #da291c;
+  color:#EAEAF6;
 }
 /*Menu links and icons*/
 .menu-link img {
@@ -64,15 +64,15 @@ p.menu-link {
 }
 .menu-link a, .menu-link a:visited {
   border-bottom:0;
-  font-family:"Avenir LT W01 95 Black", Arial, "Helvetica Neue", Helvetica, sans-serif; 
+  font-family:"Avenir LT W01 95", Arial, "Helvetica Neue", Helvetica, sans-serif; 
   color:#515353; 
   text-transform: uppercase;
   font-size:0.9rem;
   padding:0;
 }
 .menu-link a:hover, .menu-link a:visited:hover, .menu-link a:focus {
-  border-bottom:1px dotted #da291c;
-  color:#da291c; 
+  border-bottom:1px dotted #9595D2;
+  color:#9595D2; 
 }
 /*Inline lists - Foundation class isn't working*/
 .inline-list {
@@ -100,9 +100,15 @@ form input[name="order_quantity"]  {
 }
 a.buy, a.buy:visited {
   text-transform: uppercase;
-  color:#da291c;
-  font-weight:bold;
+  background:#9595D2;
+  font-size: 1rem;
   border-bottom:0;
+  color:#fff;
+  padding: 0.2em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+  top: 0.5rem;
 }
 
 a.download, a.download:visited {
@@ -114,7 +120,7 @@ a.download, a.download:visited {
 }
 
 .gift {
-  font-size:1.12rem;
+  font-size:1rem;
 }
 .socmed {  
   min-width:210px;
@@ -135,7 +141,7 @@ hr {
   border-width: 2px 0px 0px;
 }
 .footer {
-  border-top:#919191 2px solid;
+  border-top:#9595D2 3px dotted;
   padding-top:1.5rem;
   margin-top:1rem;
 }
@@ -293,7 +299,7 @@ ul.imagelist {
   /*Increase space between gift description and Buy Now link*/
   a.buy, a.buy:visited {
     display:block;
-    background-color:#da291c;
+    background-color:#9595D2;
     color:#fff;
     border-radius:0.3rem;
     padding:0.5rem;
