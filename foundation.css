@@ -1274,6 +1274,7 @@ h3.bloomex{
 	font-family: inherit;
 	font-weight: bold;
 	padding:0.3rem;
+	padding-left: 1rem;
 }
 
 table.bloomex{
@@ -1934,7 +1935,11 @@ form .row input.columns,
 form .row textarea.column,
 form .row textarea.columns {
   padding-left: 0.5rem; }
-
+  @media only screen and (max-width: 600px){
+  td.specialoffer{
+	width: 100%;
+    }	
+  }
   @media only screen and (max-width: 830px) {
   label.checkout {
     line-height: 0;
